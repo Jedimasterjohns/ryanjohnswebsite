@@ -1,0 +1,29 @@
+<mat-sidenav-container class="resume-container">
+  <nav class="link-to-home">
+      <a [routerLink]="['/home']"><i class="fa fa-angle-left"></i>&nbsp;&nbsp;&nbsp;Ryan<strong>Johns</strong></a>
+  </nav>
+  <mat-sidenav mode="push" #sidenav position="end">
+    <app-navigation></app-navigation>
+  </mat-sidenav>
+
+  <div class="sidenav-content">
+    <button type="button" mat-button (click)="sidenav.open()">
+        <div class="icon-bar"></div>
+        <div class="icon-bar"></div>
+        <div class="icon-bar"></div>
+    </button>
+  </div>
+
+  <section class="resume-container">
+      <div class="resume-content">
+        <h1 class="resume-greeting">Resume.&nbsp;
+          <small><a href="https://docs.google.com/presentation/d/1snpwPxQy4NgZsOJzBgpSuo7eW91mOT1c49Ag4km24so/export/pdf"><i class="fa fa-download"></i> PDF</a></small>
+        </h1>
+        <strong><a [routerLink]="['/about']">More about me&nbsp;&nbsp;<i class="fa fa-angle-right"></i></a></strong>
+        <br/>
+        <br/>
+        <p class="hide-for-small-down">For the best experience, view the PDF version linked above.</p>
+        <iframe class="hide-for-small-down" id="resume-embed" src="https://docs.google.com/presentation/d/e/2PACX-1vQfFX3fDujP5KFuqPAk0uL_rhgcyg9CwPf5eiE90LzIAeFp6S1kFf7quvr4ncmp9XIWjNdofuMCxYCK/embed?start=false&loop=true&delayms=60000&rm=minimal" frameborder="0" width="814" height="1054"allowfullscreen="false" mozallowfullscreen="false" webkitallowfullscreen="false"></iframe>
+      </div>
+    </section>
+  </mat-sidenav-container>

@@ -1,0 +1,58 @@
+<mat-sidenav-container class="home-container">
+  <mat-sidenav mode="push" #sidenav position="end">
+    <app-navigation></app-navigation>
+  </mat-sidenav>
+
+  <div class="sidenav-content">
+    <button type="button" mat-button (click)="sidenav.open()">
+        <div class="icon-bar"></div>
+        <div class="icon-bar"></div>
+        <div class="icon-bar"></div>
+    </button>
+  </div>
+
+  <div class="site-intro-content">
+    <h1>Hi, I'm Ryan.</h1>
+    <hr>
+    <span class="intro-text"></span>
+    <div *ngIf="(showScrollPrompter | async)" class="scroll-prompter-row show-for-large-up">
+      <span class="scroll-prompter"><a scrollTo href="#scrollTarget"><i class="fa fa-chevron-circle-down"></i></a></span>
+    </div>
+  </div>
+  </mat-sidenav-container>
+  <section class="skill-logos-container">
+    <div>
+      <h1>Skills</h1>
+      <hr>
+      <div class="row skill-logo-row">
+        <span aria-haspopup="true" data-tooltip class="has-tip" title="C#"><img class="skill-logo-img logo-img" src="../../assets/csharp-logo.png"/></span>
+        <span aria-haspopup="true" data-tooltip class="has-tip" title="ASP.net"><img class="skill-logo-img logo-img" src="../../assets/Asp.net-logo.png"/></span>
+        <span aria-haspopup="true" data-tooltip class="has-tip" title="JavaScript"><img class="skill-logo-img logo-img" src="../../assets/javascript-logo.png"/></span>
+        <span aria-haspopup="true" data-tooltip class="has-tip" title="HTML"><img class="skill-logo-img logo-img" src="../../assets/html-logo.png"/></span>
+        <span aria-haspopup="true" data-tooltip class="has-tip" title="CSS"><img class="skill-logo-img logo-img" src="../../assets/personal-site-assets/css-logo.png"/></span>
+        <a href="http://getbootstrap.com"><span aria-haspopup="true" data-tooltip class="has-tip" title="Bootstrap"><img class="skill-logo-img logo-img" src="../../assets/bootstrap-logo.png"/></span></a>
+        <a href="http://jquery.com"><span aria-haspopup="true" data-tooltip class="has-tip" title="jQuery"><img class="skill-logo-img logo-img" src="../../assets/jquery-logo.png"/></span></a>
+        <a href="https://git-scm.com"><span aria-haspopup="true" data-tooltip class="has-tip" title="Git"><img class="skill-logo-img logo-img" src="../../assets/git-logo.png"/></span></a>
+      </div>
+      <div class="row skill-logo-row">
+        <p>Python &bull; Windows/macOS/Linux &bull; SQL &bull; Stack.White &bull; Selenium &bull; Protractor &bull; Jekyll</p>
+        <p>Object-Oriented programming &bull; Full Stack Automation Testing &bull; Github Pages</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog-link">
+    <a href="/blog"><i class="fa fa-angle-left"></i>&nbsp;Blog&nbsp;<i class="fa fa-angle-right"></i></a>
+  </section>
+
+  <section class="employer-logos">
+    <div class="home-page-section-content">
+      <h1>Worked With&nbsp;&nbsp;&nbsp;<small><a href="/resume">View resume&nbsp;&nbsp;<i class="fa fa-angle-right"></i></a></small></h1>
+      <hr>
+      <div class="row employer-logo-row">
+        <a href="http://www.insidesales.com"><img class="employer-logo-img logo-img" src="../../assets/insidesales-logo.png"/></a>
+        <a href="http://xactware.com"><img class="employer-logo-img logo-img" src="../../assets/xactware-logo.png"/></a>
+        <a href="http://zamplebox.com"><img class="employer-logo-img logo-img" src="../../assets/zamplebox-logo.png"/></a>
+      </div>
+    </div>
+  </section>
