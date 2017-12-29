@@ -126,6 +126,22 @@
   div.icon-bar {
     background-color: black;
   }
+
+  .skill-logo-img {
+    margin: 0.5rem 0.5rem;
+    height: 30px;
+  }
+
+  .skill-logo-row {
+    padding: 0.2rem 0;
+    font-size: 0.5rem;
+  }
+
+  .employer-logos {
+    .employer-logo-img {
+      margin: 2rem 0;
+    }
+  }
 }
 
 .about-container {
