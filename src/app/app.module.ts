@@ -2,6 +2,7 @@ import { routing } from './app.routing';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
@@ -21,6 +22,7 @@ import { ScrollToModule } from 'ng2-scroll-to';
     BrowserModule,
     BrowserAnimationsModule,
     MatSidenavModule,
+    MatTooltipModule,
     ScrollToModule.forRoot(),
     routing
   ],

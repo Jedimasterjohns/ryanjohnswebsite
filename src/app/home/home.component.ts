@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import * as Typed from 'typed.js';
 import { GlobalServiceManager } from '../_services/global-service-manager.service';
 import { Observable } from 'rxjs/Observable';
@@ -23,7 +24,7 @@ export class HomeComponent implements AfterViewInit {
     const greetingLine =  'Software developer with a tenacity to increase efficiency and inspire creativity.<br>' +
                           'Test Automation Engineer at Xactware with web development experience.<br><br>' +
                           'I build <em>sturdy testing frameworks</em> and <em>responsive web applications</em>.';
-    let typed = new Typed('.intro-text', {
+    const typed = new Typed('.intro-text', {
       strings: [greetingLine],
       startDelay: 1500,
       typeSpeed: 10,
