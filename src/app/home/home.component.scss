@@ -103,12 +103,13 @@
 
 #scrollTarget {
   position: absolute;
-  bottom: 0;
+  top: 100vh;
 }
 
 .skill-logos-container {
-  height: 82vh;
+  height: 88vh;
   width: 90vw;
+  margin: -10px;
   padding: 15vh 5vw;
   padding-top: 5vh;
   margin-right: 2vw;
@@ -166,12 +167,17 @@
     margin: 1rem 0.5rem;
     height: 70px;
   }
+}
 
-  .employer-logos {
-    .employer-logo-img {
-      margin: 2rem 0;
-    }
+.employer-logos-container {
+  position: relative;
+  .employer-logo-img {
+    margin: 2rem 0;
   }
+}
+
+.blog-link {
+  position: relative;
 }
 
 @include keyframes(arrowBounce) {
