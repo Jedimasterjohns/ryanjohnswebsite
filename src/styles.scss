@@ -3,6 +3,11 @@
 * {
   text-decoration: none;
   font-family: "Roboto", "Helvetica Neue", sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -12,6 +17,10 @@ h1, h2, h3, h4, h5, h6 {
   color: inherit;
   text-rendering: optimizeLegibility;
   font-family: "Helvetica", serif;
+}
+
+h1 {
+  font-size: 2.75rem;
 }
 
 .sidenav {
@@ -49,3 +58,45 @@ h1, h2, h3, h4, h5, h6 {
 .text-indent {
   text-indent: 30px;
 }
+
+.row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5rem; }
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  .row:after {
+    clear: both; }
+  .row.collapse > .column,
+  .row.collapse > .columns {
+    padding-left: 0;
+    padding-right: 0; }
+  .row.collapse .row {
+    margin-left: 0;
+    margin-right: 0; }
+  .row .row {
+    width: auto;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: none; }
+    .row .row:before, .row .row:after {
+      content: " ";
+      display: table; }
+    .row .row:after {
+      clear: both; }
+    .row .row.collapse {
+      width: auto;
+      margin: 0;
+      max-width: none; }
+      .row .row.collapse:before, .row .row.collapse:after {
+        content: " ";
+        display: table; }
+      .row .row.collapse:after {
+        clear: both; }
+
