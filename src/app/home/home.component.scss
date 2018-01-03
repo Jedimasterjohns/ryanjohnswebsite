@@ -101,9 +101,14 @@
   }
 }
 
+#scrollTarget {
+  position: absolute;
+  bottom: 0;
+}
+
 .skill-logos-container {
-  min-height: 82vh;
-  min-width: 90vw;
+  height: 82vh;
+  width: 90vw;
   padding: 15vh 5vw;
   padding-top: 5vh;
   margin-right: 2vw;
