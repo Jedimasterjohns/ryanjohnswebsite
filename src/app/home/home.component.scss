@@ -135,11 +135,6 @@
     border-color: black;
   }
 
-  .skill-logo-img {
-    margin: 0.5rem 0.5rem;
-    height: 30px;
-  }
-
   .skill-logo-row {
     text-align: center;
     padding: 1rem 0;
@@ -154,12 +149,13 @@
 
 .employer-logos-container {
   position: relative;
-  overflow-y: hidden;
-  height: 88vh;
+  overflow: hidden;
+  height: 92vh;
   width: 90vw;
   padding: 15vh 5vw;
   padding-top: 5vh;
   background-color: #f4f5f5;
+
   .employer-logo-img {
     margin: 2.2rem 2rem;
     width: 20rem;
@@ -183,7 +179,6 @@
   .employer-logo-row {
     text-align: center;
     overflow-y: hidden;
-    margin: auto;
   }
 
   hr {
