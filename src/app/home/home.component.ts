@@ -23,7 +23,7 @@ export class HomeComponent implements AfterViewInit {
   ngAfterViewInit() {
     const greetingLine =  'Software developer with a tenacity to increase efficiency and inspire creativity.<br>' +
                           'Test Automation Engineer at Xactware with web development experience.<br><br>' +
-                          'I build <em>sturdy testing frameworks</em> and <em>responsive web applications</em>.';
+                          'I build <em>sturdy testing frameworks</em>  and <em>responsive web applications</em>.';
     const typed = new Typed('.intro-text', {
       strings: [greetingLine],
       startDelay: 1500,
