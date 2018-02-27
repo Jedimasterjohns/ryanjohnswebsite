@@ -16,6 +16,7 @@ import { AboutComponent } from './about/about.component';
 import { GlobalServiceManager } from './_services/global-service-manager.service';
 
 import { ScrollToModule } from 'ng2-scroll-to';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   imports: [
@@ -31,7 +32,8 @@ import { ScrollToModule } from 'ng2-scroll-to';
     HomeComponent,
     AppNavigationComponent,
     ResumeComponent,
-    AboutComponent
+    AboutComponent,
+    BlogComponent
   ],
   providers: [
     GlobalServiceManager
