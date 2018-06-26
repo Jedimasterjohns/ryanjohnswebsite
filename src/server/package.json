@@ -1,0 +1,17 @@
+{
+  "name": "one-with-angular",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.263.1",
+    "mime-types": "^2.1.18"
+  }
+}
