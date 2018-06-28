@@ -11,6 +11,7 @@
     "e2e": "ng e2e",
     "start": "node server.js",
     "deploy": "git push origin master && git push heroku master",
+    "preinstall": "npm install -g @angular/cli @angular/compiler-cli typescript",
     "postinstall": "ng build --aot -prod"
   },
   "engines": {
