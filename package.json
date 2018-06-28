@@ -2,7 +2,7 @@
   "name": "ryanjohnswebsite",
   "version": "0.0.0",
   "license": "MIT",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "ng": "ng",
     "build": "ng build",
